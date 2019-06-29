@@ -1,0 +1,25 @@
+.main-header {
+    background-color: #d4452b !important;
+    position: fixed !important;
+    width: 100%;
+}
+
+.main-header .header {
+    display: flex;
+    justify-content: 'wrap';
+}
+
+.main-content {
+    background-color: white !important;
+    margin-top: 64px;
+    height: 1000px;
+}
+
+.logo {
+    width: 120px;
+    height: 40px;
+}
+
+.search {
+    width: 500px !important;
+}
