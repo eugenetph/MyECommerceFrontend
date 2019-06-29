@@ -29,6 +29,15 @@ function App() {
         >
           {children}
         </Select>
+        <Select
+          mode="multiple"
+          style={{ width: '300px' }}
+          placeholder="Please select"
+          defaultValue={['a10', 'c12']}
+          onChange={handleChange}
+        >
+          {children}
+        </Select>
       </div>
     </div>
   );
