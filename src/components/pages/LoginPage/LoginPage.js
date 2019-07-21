@@ -1,20 +1,18 @@
 import React /*{ useState }*/ from 'react';
-import './LandingPage.css';
+import './LoginPage.css';
 
 
 import {
   Layout,
   Input,
-  Button
+  Button,
+  Icon
 } from 'antd'
 import 'antd/dist/antd.css';
 
 const { Header, Content, Footer } = Layout
 
-const LandingPage = () => {
-  function handlePageChange() {
-    //window.open('LoginPage', "_blank")
-  }
+const LoginPage = () => {
   return (
     
     <div>
@@ -27,14 +25,18 @@ const LandingPage = () => {
             <div style={{ margin: '0 10px'}}>
               <Input className='search' placeholder="Search in MyECommerce" disabled={true} />
             </div>
-            <div style={{ margin: '0 10px'}}>
-              <Button onClick={handlePageChange()}>Login</Button>
-            </div>
           </div>
         </Header>
         <Content className='main-content'>
-          <h1>{process.env.REACT_APP_API_HOST}</h1>
-          
+        <div style={{ width: '30%'}}>
+            Login:
+          <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                  placeholder="Username"
+          />
+          <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                  placeholder="Password" type="Password"
+          />
+          </div>
         </Content>
         <Footer className='main-footer'>
           <h1>Footer</h1>
@@ -44,4 +46,4 @@ const LandingPage = () => {
   );
 }
 
-export default LandingPage;
+export default LoginPage;
