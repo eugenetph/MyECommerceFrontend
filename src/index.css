@@ -23,3 +23,11 @@
 .search {
     width: 500px !important;
 }
+
+.entry-container {
+    float: right;
+}
+
+.entry-container .entry {
+    color: white;
+}

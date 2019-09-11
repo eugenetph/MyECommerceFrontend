@@ -1,0 +1,17 @@
+.modal {
+    margin: auto;
+    width: 40%;
+    padding-top: 50px;
+}
+.login-button {
+    margin-right: 10px;
+}
+
+.login-button .ant-btn-primary {
+    width: 100px !important;
+}
+
+.cancel-button .ant-btn {
+    width: 100px !important;
+
+}
